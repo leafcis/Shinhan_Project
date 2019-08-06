@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-cors": "^0.0.3",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.19.1"
+  },
+  "name": "yarn",
+  "version": "1.0.0",
+  "description": "신한은행 산학 프로젝트 backend",
+  "main": "index.js",
+  "author": "Choi ISAK",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon index.js"
+  }
+}

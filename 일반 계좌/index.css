@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    overflow: hidden;
+}
+
+hr {
+    border: 5.5px solid #0030CB;
+    background-color: #0030CB;
+}
+
+.content {
+    height: calc(100vh - 22px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    width: 272px;
+    align-items: flex-end;
+    height: 159px;
+    margin-bottom: 20px;
+}
+
+#logo {
+    align-self: center;
+}
+
+.purchase {
+    width: 272px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.make {
+    position: fixed;
+    width: 190.58px;
+    height: 124.58px;
+    bottom: 15px;
+    left: 0px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.qq {
+    height: 124.58px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width: 82px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.amount {
+    box-sizing: border-box;
+    padding-top: 28.5px;
+    padding-bottom: 39px;
+    font-size: 20px;
+    width: 100%;
+    height: 145.98px;
+    background-color: rgba(0, 48, 203, 0.44);
+    border-radius: 136px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.name {
+    width: calc(100% - 28px);
+    padding-left: 14px;
+    display: flex;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.round {
+    width: 271px; 
+    height: 271px;
+    background-color: #AA90CF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 200px;
+    height: 25px;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+}
