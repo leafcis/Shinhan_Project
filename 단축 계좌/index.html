@@ -16,10 +16,11 @@
             </div>
             <div id="purchase" class="purchase">
                 <span>단축계좌</span>
-                <div class="round">
+                <div class="round" style="position: relative;">
                     <span>번호 : 8282@#</span>
-                    <span>금액 : </span>
+                    <span>금액 : <span id="amount">100000</span></span>
                     <span>보낼사람 선택</span>
+                    <button style="position: absolute; top: 170px;">전송</button>
                     <input>
                 </div>
             </div>
@@ -32,5 +33,6 @@
             </div>
         </div>
         <hr>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </body>
 </html>

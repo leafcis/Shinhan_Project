@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+        <meta charset="UTF-8">
+        <title>심플 모드</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
+    </head>
+    <body id="body">
+        <hr>
+        <article id = "modal" class="modal">
+            <div id="qaqaqa">이체중입니다...</div>
+        </article>
+        <header>
+            <img src="shin.png" height="150" width="130">
+        </header>
+        <article class="content">
+            <div class="content--wrapper">
+                <span>88,000원</span>
+                <div class="target--wrapper">
+                    <span>받을 사람 : </span>
+                    <input type = "text" id = "input">
+                </div>
+                <div id = "result" class="result">
+                    <span>11111111112</span>
+                    <span>jiseok</span>
+                </div>
+            </div>
+            <button id="send">송금</button>
+        </article>
+        <article id="password" class="password">
+            <div class="password--wrapper">
+                <span style="font-size: 24px;">비밀번호</span>
+                <table>
+                    <tr>
+                        <td id= "f"></td>
+                        <td id="s"></td>
+                        <td id="t"></td>
+                        <td id="fo"></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id = "1">1</td>
+                        <td id = "2">2</td>
+                        <td id = "3">3</td>
+                        <td id = "4">4</td>
+                        <td id = "5">5</td>
+                        <td>취소</td>
+                    </tr>
+                    <tr>
+                        <td id = "6">6</td>
+                        <td id = "7">7</td>
+                        <td id = "8">8</td>
+                        <td id = "9">9</td>
+                        <td id = "0">0</td>
+                        <td id = "submit"><-</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <hr>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    </body>
+</html>

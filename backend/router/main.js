@@ -7,11 +7,49 @@ let connection = mysql.createConnection({
     host : "127.0.0.1",
     port : 3306,
     user : "root",
-    password : "???",
+    password : "Le@fcis2329",
     database : "sh"
 })
 
 console.log(connection.connect())
+
+router.post('/list', (req, res) => {
+    const reqBody = req.body;
+    connection.query("SELECT virtual_address.virtual_address, address.address FROM sh.virtual_address natural join sh.address where address.id = 'leaf_cis';", (error, response, fields) => {
+        res.send(response)
+    })
+})
+
+router.post('/send', (req, res) => {
+    const reqBody = req.body;
+    connection.query("SELECT address.amount from address where address='" + reqBody.from + "'", (err, response, fields) => {
+        let fromAmount = response[0].amount - parseInt(reqBody.amount);
+        if(fromAmount >= 0) {
+            connection.query("SELECT address.amount from address where address='" + reqBody.to + "'", (err, response2, fields) => {
+                let toAmount = response2[0].amount + parseInt(reqBody.amount)
+                connection.query("UPDATE address set amount=" + toAmount + " where address = '"+ reqBody.to +"'", (err, response3, fields) => {
+                    if(err) {
+                        res.send({message : '실패'})
+                    }
+                    else {
+                        connection.query("UPDATE address set amount=" + fromAmount + " where address = '"+ reqBody.from + "'", (err2, response4, fields2) => {
+                            if(err) {
+                                res.send({message : '실패'})
+                            }
+                            else {
+                                res.send({message : '성공'})
+                            }
+                        })
+                    }
+                })
+            })
+        }
+        else {
+            res.send({message : '잔액 부족'})
+        }
+    })
+})
+
 
 router.post('/game', (req, res) => {
     const reqBody = req.body;

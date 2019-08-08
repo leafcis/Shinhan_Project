@@ -1,0 +1,153 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family:'NanumSquareRound';
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 50px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.scroll--list {
+    display: none;
+}
+
+.account--list {
+    display: none;
+    position: absolute;
+    width: 272px;
+    flex-direction: column;
+    top: 24px;
+}
+
+.amount {
+    height: 60px;
+    width: 272px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.amount > span {
+    font-size: 40px;
+}
+
+header > div > span {
+    font-size: 22px;
+    display: inline-block;
+}
+
+.numpad {
+    display: flex;
+    justify-content: space-between;
+    width: 272px;
+    height: 368.5px;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.button--wrapper {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.button--wrapper > div {
+    width: 100px;
+    font-size: 20px;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    border: 1.2px solid #000000;
+    border-radius: 50px;
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+tr {
+    height: 62px;
+}
+
+td {
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.4s;
+    border-radius: 31px;
+    font-weight: bold;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+td:hover {
+    background-color: #808080;
+}
+
+hr {
+    border: 5.5px solid #0030CB;
+    width: 100vw;
+    margin: 0
+}
+
+.account {
+    width: 272px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.virtual {
+    font-size: 15px;
+    position: absolute;
+    right: 49px;
+    bottom: -16px;
+    font-weight: 550;
+}
+
+#address {
+    font-weight: bold;
+}
+
+.address {
+    width: 232px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    font-size: 20px;
+    height: 40px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.address:hover {
+    background-color: #F0F0F0;
+}

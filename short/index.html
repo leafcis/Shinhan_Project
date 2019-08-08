@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+        <meta charset="UTF-8">
+        <title>심플 모드</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
+    </head>
+    <body id="body">
+        <hr>
+        <header>
+            <img src="shin.png" height="150" width="130">
+        </header>
+        <article class="content">
+            <div class="content--wrapper">
+                <span>단축계좌 생성</span>
+                <div class="target--wrapper">
+                    <span>대상 계좌 : </span>
+                    <div>
+                        <span>1111111111</span>
+                        <span>▼</span>
+                    </div>
+                </div>
+                <div class="target--wrapper">
+                    <span>단축 계좌 : </span>
+                    <input type = "text" id = "input">
+                </div>
+            </div>
+            <button id="send">생성</button>
+        </article>
+        <hr>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    </body>
+</html>
